@@ -39,7 +39,7 @@ jobs:
             ~/.movement/*
           key: cached-test-data-${{ runner.os }}
           restore-keys: cached-test-data
-      - uses: neuroinformatics-unit/actions/build_sphinx_docs@main
+      - uses: neuroinformatics-unit/actions/build_sphinx_docs@build-docs-group-dep
         with:
           python-version: 3.13
           use-make: true
